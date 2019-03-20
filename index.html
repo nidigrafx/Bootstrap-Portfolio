@@ -1,41 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bootstrap Porfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <title>Bootstrap Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+     
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    
+    .row.content {height: 450px}
+    
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    
+    footer {
+      background-color: light gray;
+      color: black;
+      padding: 25px;
+    }
+    
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  
-  <a class="navbar-brand" href="#">
-    <img src="face_1.jpg" alt="logo" style="width:40px;">
-  </a>
-   
-   <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 3</a>
-    </li>
-  </ul>
-</nav>
 
-<div class="container-fluid">
-  <h3>Brand / Logo</h3>
-  <p>When using the .navbar-brand class on images, Bootstrap 4 will automatically style the image to fit the navbar.</p>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+    <div class="col-sm-8 text-left"> 
+      <h1>Welcome</h1>
+      <p>You have entered the site of Playground Ballaz.  They are supreme athletes bound by a commitment to be the best and play the best.  They are brothers, mothers, fathers, son and daughters.  They are passionate about their craft and are determined to conquere whomever are brave enough to enter their domain.  Their city knows them...now the "WORLD"... </p>
+      <hr>
+      <h3>Creed we live by...</h3>
+      <p>"My Passion", "My Soul", "My Life"...</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        
+      
 </div>
-    
+
+<footer class="container-fluid text-center">
+        <p>"My Passion, My Soul, My Life"</p>
+      </footer>
+      
+
 </body>
 </html>
